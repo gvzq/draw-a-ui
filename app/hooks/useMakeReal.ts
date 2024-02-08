@@ -9,7 +9,7 @@ export function useMakeReal() {
 
 	return useCallback(async () => {
 		const input = document.getElementById('openai_key_risky_but_cool') as HTMLInputElement
-		const apiKey = input?.value ?? null
+		const apiKey = process.env.NEXT_PUBLIC_KEY ?? null
 
 		track('make_real', { timestamp: Date.now() })
 

@@ -29,26 +29,27 @@ export function APIKeyInput() {
 	if (isFocusMode) return null
 
 	return (
-		<div className={`your-own-api-key ${breakpoint < 6 ? 'your-own-api-key__mobile' : ''}`}>
-			<div className="your-own-api-key__inner">
-				<div className="input__wrapper">
-					<input
-						id="openai_key_risky_but_cool"
-						defaultValue={localStorage.getItem('makeitreal_key') ?? ''}
-						onChange={handleChange}
-						onKeyDown={handleKeyDown}
-						spellCheck={false}
-						autoCapitalize="off"
-					/>
-				</div>
-				<a
-					className="question__button"
-					target="_blank"
-					href="https://tldraw.notion.site/Make-Real-FAQs-93be8b5273d14f7386e14eb142575e6e?pvs=4"
-				>
-					<Icon icon={cool ? 'check' : 'question'} />
-				</a>
-			</div>
-		</div>
+		// <div className={`your-own-api-key ${breakpoint < 6 ? 'your-own-api-key__mobile' : ''}`}>
+		// 	<div className="your-own-api-key__inner">
+		// 		<div className="input__wrapper">
+		// 			<input
+		// 				id="openai_key_risky_but_cool"
+		// 				defaultValue={localStorage.getItem('makeitreal_key') ?? ''}
+		// 				onChange={handleChange}
+		// 				onKeyDown={handleKeyDown}
+		// 				spellCheck={false}
+		// 				autoCapitalize="off"
+		// 			/>
+		// 		</div>
+		// 		<a
+		// 			className="question__button"
+		// 			target="_blank"
+		// 			href="https://tldraw.notion.site/Make-Real-FAQs-93be8b5273d14f7386e14eb142575e6e?pvs=4"
+		// 		>
+		// 			<Icon icon={cool ? 'check' : 'question'} />
+		// 		</a>
+		// 	</div>
+		// </div>
+		<></>
 	)
 }

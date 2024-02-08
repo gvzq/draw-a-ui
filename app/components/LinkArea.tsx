@@ -9,17 +9,18 @@ export function LinkArea() {
 	if (isFocusMode) return null
 
 	return (
-		<span
-			className={`lockup__link ${
-				breakpoint < 6 ? 'lockup__link__mobile' : ''
-			} flex mb-1 items-center justify-center`}
-		>
-			<a
-				href="https://twitter.com/tldraw"
-				onClick={() => track('lockup_clicked', { timestamp: Date.now() })}
-			>
-				<img alt="tldraw logo" className="lockup" src="/lockup.svg" />
-			</a>
-		</span>
+		// <span
+		// 	className={`lockup__link ${
+		// 		breakpoint < 6 ? 'lockup__link__mobile' : ''
+		// 	} flex mb-1 items-center justify-center`}
+		// >
+		// 	<a
+		// 		href="https://twitter.com/tldraw"
+		// 		onClick={() => track('lockup_clicked', { timestamp: Date.now() })}
+		// 	>
+		// 		<img alt="tldraw logo" className="lockup" src="/lockup.svg" />
+		// 	</a>
+		// </span>
+		<></>
 	)
 }
